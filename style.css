@@ -1,0 +1,313 @@
+/* globle reset to remove any extra space */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* web page body */
+body {
+    /* background: url(./pics/syed.gif.png);
+    background: size 100%;
+    background-position:100px 10 px; */
+    /* background-color: #F4F2DE; */
+    /* background-color:#176B87 ; */
+    /* background-color: #DAFFFB; */
+    background-color: whitesmoke;
+
+
+
+
+}
+
+/* title name and liks main div for back ground color */
+.header {
+    /* background-color: #f8f8f8; */
+    /* background-color:#E9B384; */
+    background-color: #001C30;
+    /* width: 100%; */
+
+
+}
+
+/* titile name */
+.tital_name {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px;
+    color: #DAFFFB;
+
+}
+
+/* this the styling for hyperlinks */
+.links,
+#n1,
+#n2,
+#n3,
+#n4 {
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+    font-family: 'Parisienne', cursive;
+    font-weight: 500;
+    font-size: 30px;
+    color: #DAFFFB;
+    text-transform: capitalize;
+    font-size: 2rem;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+
+
+/* the parent div for cards */
+.main_card {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    /* margin:top right bottom left; */
+    margin: 50px 50px 50px 50px;
+    justify-content: center;
+
+
+}
+
+/* child left card */
+.left {
+    width: 50%;
+
+}
+
+/* child right card  */
+.right {
+    width: 50%;
+
+}
+
+/* left and right image / anker element */
+.main_card a>img {
+
+    display: inline;
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border-radius: 15px;
+    
+
+}
+
+/* the cards paragraph element */
+.card>p {
+
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+}
+
+/* the cards h2 element*/
+.card>h2 {
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+/* footer elements styling  */
+.footer_main {
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    background-color: #001C30;
+    padding: 60px;
+
+    border-radius: 40px;
+
+}
+
+/* footer list and anker */
+.footer_list * {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: 'Parisienne', cursive;
+    /* (top right bottom left) */
+
+
+}
+
+
+
+
+/* logo image  */
+.logo>img {
+    height: 120px;
+
+
+
+}
+
+/* footer Email button */
+.Email_button {
+    /* margin:top right bottom left; */
+    /* margin: 30px 30px 30px 0px; */
+    /* flex-basis: 50px;
+    height: 20px;
+    padding: 10px; */
+    /* width:1.5rem; */
+
+
+
+
+}
+
+
+
+/* footer pagragraph element  */
+.footer_main>p {
+    color: white;
+
+
+}
+
+
+/* copy right  */
+.copy_rights {
+    background-color: #008CBA;
+    padding: 30px;
+    text-align: center;
+    color: #DAFFFB;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style for small devices */
+
+@media (max-width: 599px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {}
+
+
+    /* header  */
+    .header {
+        width: 100%;
+    }
+
+    .tital_name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* navigation */
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* main card for left right cards */
+    .main_card {
+        /* margin:20px; */
+        /* display: flex;
+        flex-direction: column; */
+        display: inline;
+        align-items: center;
+        width: 100%;
+
+
+
+    }
+
+
+    .card {
+
+
+        width: 100%;
+        display: inline;
+        margin-bottom: 30px;
+        text-align: justify;
+        object-fit: cover;
+        
+
+
+
+    }
+
+    .card>a>img {
+        margin: 0px;
+        padding: 0px;
+        /* margin:top right bottom left; */
+        width: 100%;
+        object-fit: cover;
+        margin-bottom:15px;
+        border-radius: 15px;
+        
+
+    }
+
+    .card>p {
+        margin: 10px;
+
+    }
+
+    .card>h2{
+
+        margin: 10px;
+        font-weight: bold;
+
+    }
+
+    .footer_main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .copy_rights {
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,389 @@
+/* globle reset to remove any extra space */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* web page body */
+body {
+    background-color: whitesmoke;
+    
+
+}
+
+/* title name and liks main div for back ground color */
+.header {
+    background-color: #001C30;
+    width: 100%;
+
+
+}
+
+/* titile name */
+.tital_name {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px;
+    color: #DAFFFB;
+
+}
+
+/* this the styling for hyperlinks */
+.links,
+#n1,
+#n2,
+#n3,
+#n4 {
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Parisienne', cursive;
+    font-weight: 500;
+    font-size: 30px;
+    color: #DAFFFB;
+    text-transform: capitalize;
+    font-size: 2rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about card Styling*/
+.container {
+    /* background-color: #008CBA; */
+
+}
+
+
+
+/* main div for all about details */
+.intro_card_row {
+
+   
+    height: auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px;
+    border: 5px solid gray;
+    border-style:;
+    border-radius: 30px;
+    /* top right bottom left */
+    padding: 30px 30px 30px 25px ;
+}
+
+/* left about info */
+.left_info {
+    width: 50%;
+    /* display: flex;
+    flex-direction: column; */
+
+
+}
+
+/* right about info */
+.right_info {
+    width: 50%;
+    font-size: 30px;
+    padding: 20px;
+
+}
+.right_info > p{
+    color: rgb(153, 144, 144);
+}
+
+
+
+
+
+/* about card pic and information  */
+
+/* -------> */
+
+/*image in left card*/
+.pic_details>img {
+    
+    
+    /* background-color: #008CBA; */
+    float: left;
+    width: 150px;
+    margin-right: 70px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    
+    
+
+}
+.pic_details > h4{
+
+    font-size: 20px;
+    padding-top: 15px;
+
+  
+}
+
+
+/* span inside the h4 elements  */
+span {
+    color: gray;
+    padding-left: 6px;
+}
+
+
+
+.skills{
+    clear: both;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.skils > h4, p {
+    padding-top:20px;
+    
+}
+
+
+/* skill set bars  */
+.html_bar {
+    height: 0.7rem;
+    background-color: #001C30;
+    width: 60%;
+    
+}
+
+.Css_bar {
+    height: 0.7rem;
+    background-color: #001C30;
+    width: 50%;
+}
+
+.php_bar {
+    height: 0.7rem;
+    background-color: #001C30;
+    width: 10%;
+}
+
+.java_bar {
+    height: 0.7rem;
+    background-color: #001C30;
+    width: 10%;
+}
+
+.container  {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer elements styling  */
+.footer_main {
+    /* display: inline-flex; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+    background-color: #001C30;
+    padding: 60px;
+
+    border-radius: 40px;
+
+}
+
+/* footer list and anker */
+.footer_list * {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: 'Parisienne', cursive;
+    /* (top right bottom left) */
+
+
+}
+
+
+
+
+/* logo image  */
+.logo>img {
+    height: 120px;
+
+
+
+}
+
+
+
+/* footer pagragraph element  */
+.footer_main>p {
+    color: white;
+
+
+}
+
+
+/* copy right  */
+.copy_rights {
+    background-color: #008CBA;
+    padding: 30px;
+    text-align: center;
+    color: #DAFFFB;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 40px;
+}
+
+
+
+/* style for small devices */
+
+@media (max-width: 600px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {}
+
+
+    /* header  */
+    .header {
+        width: 100%;
+    }
+
+    .tital_name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* navigation */
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+    .footer_main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .copy_rights {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 850px){
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    
+    .container{
+       
+       
+    }
+
+    .intro_card_row{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0;
+        border: none;
+        clear: left;
+
+
+    }
+
+    .pic_details > h4{
+
+    }
+
+    .pic_details>img {
+     margin-bottom: 20px;
+     display: inline;
+     clear: both;
+    }
+
+    .skills{
+        width: 100%;
+    }
+
+    .right_info{
+        width: 100%;
+        line-height: 1.5;
+    }
+    .left_info{
+        width: 100%;
+    }
+
+    /* for the font  */
+    .container  {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+}
